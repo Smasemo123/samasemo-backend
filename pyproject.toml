@@ -2,12 +2,13 @@
 name = "sama-music-backend"
 version = "1.0.0"
 description = "Sama Music Remover Backend"
-requires-python = ">=3.11"
+requires-python = "==3.13.*"
+
 dependencies = [
-    "fastapi",
-    "uvicorn",
+    "fastapi[standard]",
     "python-multipart",
     "demucs",
+    "numpy"
 ]
 
 [tool.fastapi]
