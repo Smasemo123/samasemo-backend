@@ -1,0 +1,21 @@
+[project]
+name = "sama-music-backend"
+version = "1.0.0"
+description = "Sama Music Remover Backend"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "python-multipart",
+    "demucs",
+]
+
+[tool.fastapi]
+entrypoint = "main:app"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["main"]
